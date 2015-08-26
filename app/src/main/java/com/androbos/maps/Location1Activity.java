@@ -1,11 +1,14 @@
 package com.androbos.maps;
 
+import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -35,6 +38,14 @@ public class Location1Activity extends AppCompatActivity implements GoogleApiCli
         txtOutput = (TextView) findViewById(R.id.txtOutput);
         txtLatitude = (TextView)findViewById(R.id.txtOutputlalitude);
         txtLongitude = (TextView)findViewById(R.id.txtOutputLongitude);
+        Button location2 = (Button)findViewById(R.id.tolocation2);
+        location2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Location1Activity.this, Location2Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
