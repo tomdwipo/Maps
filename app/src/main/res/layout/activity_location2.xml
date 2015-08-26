@@ -43,5 +43,15 @@
         android:layout_marginTop="24dp"
         android:text="Longitude Goes Here"
         android:textSize="16dp"/>
+    <LinearLayout
+        android:layout_below="@id/longitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/recognitionActivity"
+            android:text="Recognition Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </RelativeLayout>

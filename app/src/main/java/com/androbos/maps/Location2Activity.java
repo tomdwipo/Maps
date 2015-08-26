@@ -1,11 +1,14 @@
 package com.androbos.maps;
 
+import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -30,6 +33,14 @@ public class Location2Activity extends AppCompatActivity implements GoogleApiCli
         setContentView(R.layout.activity_location2);
         mLatitudeText = (TextView) findViewById((R.id.latitude_text));
         mLongitudeText = (TextView) findViewById((R.id.longitude_text));
+        Button recognition = (Button)findViewById(R.id.recognitionActivity);
+        recognition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Location2Activity.this, RecognitionActivity.class);
+                startActivity(intent);
+            }
+        });
         buildGoogleApiClient();
     }
     protected synchronized void buildGoogleApiClient() {
