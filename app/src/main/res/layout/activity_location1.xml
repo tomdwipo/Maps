@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.androbos.maps.Location1Activity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView android:text="Location"
+        android:id="@+id/txtlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:text="Location Goes Here"
+        android:id="@+id/txtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:text="Latitude"
+        android:id="@+id/txtLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:text="Location Goes Here"
+        android:id="@+id/txtOutputlalitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:text="Longitude"
+        android:id="@+id/txtlongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:text="Location Goes Here"
+        android:id="@+id/txtOutputLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+
+</RelativeLayout>
