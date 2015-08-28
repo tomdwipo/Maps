@@ -89,6 +89,12 @@
                 android:text="Street View Panorama"
                 android:id="@+id/streetView"
                 android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fused Location"
+                android:id="@+id/FusedLocation"
+                android:layout_weight="1" />
 
         </LinearLayout>
 

@@ -27,5 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/request_activity_updates_button"
         android:text="@string/detected_activities_title"/>
+    <Button
+        android:id="@+id/autocomplete"
+        android:text="AutoComplete Maps"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

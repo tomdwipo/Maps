@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androbos.maps" >
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -49,10 +50,23 @@
             android:name=".RecognitionActivity"
             android:label="@string/title_activity_recognition" >
         </activity>
+
         <service
             android:name=".DetectedActivitiesIntentService"
             android:exported="false" />
 
+        <activity
+            android:name=".GooglePlaceAutocompleteActivity"
+            android:label="@string/title_activity_google_place_autocomplete" >
+        </activity>
+        <activity
+            android:name=".GeofencesActivity"
+            android:label="@string/title_activity_geofences" >
+        </activity>
+        <activity
+            android:name=".FusedLocationActivity"
+            android:label="@string/title_activity_fused_location" >
+        </activity>
     </application>
 
 </manifest>

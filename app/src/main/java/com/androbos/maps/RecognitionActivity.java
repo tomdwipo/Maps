@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,6 +49,14 @@ public class RecognitionActivity extends AppCompatActivity implements GoogleApiC
         mStatusText = (TextView) findViewById(R.id.detectedActivities);
         mBroadcastReceiver = new ActivityDetectionBroadcastReceiver();
         buildGoogleApiClient();
+        Button autocomplete = (Button)findViewById(R.id.autocomplete);
+        autocomplete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecognitionActivity.this, GooglePlaceAutocompleteActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     public void requestActivityUpdatesButtonHandler(View view) {
         if (!mGoogleApiClient.isConnected()) {

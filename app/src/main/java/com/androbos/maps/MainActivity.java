@@ -76,6 +76,14 @@ public class MainActivity extends ActionBarActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button FusedLocation = (Button)findViewById(R.id.FusedLocation);
+        FusedLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FusedLocationActivity.class);
+                startActivity(intent);
+            }
+        });
         renton = new MarkerOptions()
                 .position(new LatLng(47.489805, -122.120502))
                 .title("Renton")
